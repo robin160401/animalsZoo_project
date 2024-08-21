@@ -118,6 +118,10 @@ function printAnimalsInHabitat(){
     }
     deleteButton.addEventListener("click", callFunction);
   })
+  name.value = "";
+  birthyear.value = "";
+  specialNeeds.value = "";
+  selectedAnimal.selectedIndex = 0;
 }
 
 
