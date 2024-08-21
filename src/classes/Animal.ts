@@ -7,14 +7,13 @@ class Animal implements IAnimal {
     yearOfBirth: string;
     continents: string = "";
     specialNeeds: string;
-    enclosureID: EnclosureId;
+    enclosureID: EnclosureId = 0;
     
-    constructor(emoji: string, name: string, yearOfBirth: string, specialNeeds: string, enclosure: EnclosureId){
+    constructor(emoji: string, name: string, yearOfBirth: string, specialNeeds: string){
         this.emoji = emoji;
         this.name = name;
         this.yearOfBirth = yearOfBirth;
         this.specialNeeds = specialNeeds;
-        this.enclosureID = enclosure;
     }
 
     getContinent(value: string){
@@ -37,6 +36,7 @@ class Animal implements IAnimal {
             default:
                 this.continents = "europe";
                 break;
+
         }     
     }
 
