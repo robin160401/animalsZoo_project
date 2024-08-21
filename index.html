@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,12 +8,48 @@
   </head>
   <body>
 
+    <h1>Animal Zoo</h1>
 
+    <h2>Create a new animal</h2>
+    <form id="animalForm">
+      <select id="animalType">
+        <option value="choose">Choose animal</option>
+        <option value="Dolphin">🐬 Dolphin</option>
+        <option value="Lion">🦁 Lion</option>
+        <option value="Elephant">🐘 Elephant</option>
+        <option value="Tiger">🐅 Tiger</option>
+        <option value="Bear">🐻 Bear</option>
+        <option value="Panda">🐻 Panda</option>
+        <option value="Parrot">🐦 Parrot</option>
+        <option value="Snake">🐍 Snake</option>
+        <option value="Turtle">🐢 Turtle</option>
+        <option value="Frog">🐸 Frog</option>
+        <option value="Shark">🦈 Shark</option>
+        <option value="Octopus">🐙 Octopus</option>
+        <option value="Ant">🐜 Ant</option>
+        <option value="Snail">🐌 Snail</option>
+        <option value="Beetle">🐞 Beetle</option>
+        <option value="Bug">🪲 Bug</option>
+        <option value="Spider">🕷️ Spider</option>
+      </select>
 
+      <label for="name">Name:</label>
+      <input type="text" name="" id="name">
 
+      <label for="yearOfBirth">Birthyear:</label>
+      <input type="number" name="" id="yearOfBirth">
 
+      <label for="specialNeeds">Special needs:</label>
+      <input type="text" name="" id="specialNeeds">
 
+      <button id="submit" type="submit">Create Animal</button>
+    </form>
 
+    <div id="savannahHabitat"></div>
+    <div id="jungleHabitat"></div>
+    <div id="aquaticHabitat"></div>
+    <div id="reptileHouse"></div>
+    <div id="forrestHabitat"></div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
