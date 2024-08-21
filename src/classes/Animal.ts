@@ -41,24 +41,18 @@ class Animal implements IAnimal {
     }
 
     organizeEnclusereId(value: string){
-        switch (value){
-            case "Dolphin"  || "Shark" || "Octopus":
-                this.enclosureID = EnclosureId.Aquatic;
-                break;
-            case "Lion" || "Elephant":
-                this.enclosureID = EnclosureId.Savannah;
-                break;
-            case "Tiger" || "Panda" || "Parrot" ||  "Ant" || "Snail":
-                this.enclosureID = EnclosureId.Jungle;
-                break;
-            case "Snake" || "Frog" || "Turtle":
-                this.enclosureID = EnclosureId.Reptile
-                break;
-            default:
-                    this.enclosureID = EnclosureId.Forest
-                    break;
-        } 
-      }
+        if (value == "Dolphin" || value == "Shark" || value == "Octopus"){
+            return 1;
+        } else if (value == "Lion" || value == "Elephant"){
+            return 2;
+        } else if (value == "Tiger" || value == "Panda" || value == "Parrot" || value == "Ant" || value == "Snail"){
+            return 3;
+        } else if (value == "Snake" || value == "Frog" || value == "Turtle"){
+            return 4;
+        } else {
+            return 5;
+        }
+    }
 }
 
 export default Animal;
