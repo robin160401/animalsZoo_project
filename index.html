@@ -2,13 +2,14 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/img/Logo_zoo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Zoo Animals</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
 
-    <h1>Animal Zoo</h1>
+    <h1><img src="./src/img/Logo_zoo.png" alt="Logo" class="logo"> Animal Zoo </h1>
 
     <h2>Create a new animal</h2>
     <form id="animalForm">
@@ -45,11 +46,13 @@
       <button id="submit" type="submit">Create Animal</button>
     </form>
 
-    <div id="savannahHabitat"><h2>Savanna Habitat</h1></div>
+  <section>
+    <div id="savannahHabitat"><h2>Savanna Habitat</h2></div>
     <div id="jungleHabitat"><h2>Jungle Habitat</h2></div>
     <div id="aquaticHabitat"><h2>Aquatic Habitat</h2></div>
     <div id="reptileHouse"><h2>Reptile House</h2></div>
     <div id="forrestHabitat"><h2>Forrest Habitat</h2></div>
+  </section>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
