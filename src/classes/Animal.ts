@@ -37,9 +37,28 @@ class Animal implements IAnimal {
             default:
                 this.continents = "europe";
                 break;
-        } 
-            
+        }     
     }
+
+    organizeEnclusereId(value: string){
+        switch (value){
+            case "Dolphin"  || "Shark" || "Octopus":
+                this.enclosureID = EnclosureId.Aquatic;
+                break;
+            case "Lion" || "Elephant":
+                this.enclosureID = EnclosureId.Savannah;
+                break;
+            case "Tiger" || "Panda" || "Parrot" ||  "Ant" || "Snail":
+                this.enclosureID = EnclosureId.Jungle;
+                break;
+            case "Snake" || "Frog" || "Turtle":
+                this.enclosureID = EnclosureId.Reptile
+                break;
+            default:
+                    this.enclosureID = EnclosureId.Forest
+                    break;
+        } 
+      }
 }
 
 export default Animal;
