@@ -41,22 +41,26 @@ h1{
   font-family: 'Logo-font';
   color: rgb(87, 149, 33);
   font-size: 6rem;
-  margin: 30px;
+  margin: 30px 7%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(87, 149, 33, 0.364);
+  ;
 }
 
 h2{
  text-align: center;
  color: white;
  text-shadow: 0px 0px 10px  rgb(32, 56, 14);
- padding: 10px;
+ padding: 5px;
  font-size: 2rem;
+ text-transform: uppercase;
 }
 
 /** Formular **/
 
 form{
   margin: 20px 7.5%;
-  padding: 20px;
+  padding: 3% 6%;
   width: 85%;
   /* for the glass looks like background */
   background: rgba(255, 255, 255, 0.2);
@@ -71,53 +75,44 @@ form{
  */  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
-
+  align-content: center;
 }
 
 select{
-  width: 35%;
+  width: 49%;
   height: 40px;
   text-align: center;
   font-size: 1rem;
     /* for the glass looks like background */
-    background: rgba(201, 224, 187, 0.47);
+    background: rgba(168, 202, 146, 0.47);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(13.1px);
     -webkit-backdrop-filter: blur(13.1px);
     border: 1px solid rgba(255, 255, 255, 0.692);
-
 }
 
 input{
   font-size: 1rem;
-  width:35%;
+  width: 49%;
   height: 40px;
   padding: 5px 15px;
-
   /* for the glass looks like background */
-  background: rgba(201, 224, 187, 0.47);
+  background: rgba(168, 202, 146, 0.47);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13.1px);
   -webkit-backdrop-filter: blur(13.1px);
   border: 1px solid rgba(255, 255, 255, 0.692);
+  color: black;
 }
 
-#name{
+/* #name{}
+#yearOfBirth{}
+#specialNeeds{} */
 
-}
-
-#yearOfBirth{
-
-}
-
-#specialNeeds{
-
-}
-
-button{
-  width: 80%;
+#submit{
+  width: 100%;
   height: 40px;
   background-color: rgba(87, 149, 33, 0.777);
   color: white;
@@ -126,6 +121,7 @@ button{
   backdrop-filter: blur(13.1px);
   -webkit-backdrop-filter: blur(13.1px);
   border: 1px solid rgba(255, 255, 255, 0.692);
+  font-size: 1.1rem;
 }
 
 /** Animal Output **/
@@ -135,7 +131,6 @@ section{
   flex-wrap: wrap;
   gap: 2.5%;
   margin: 3%;
-  
 }
 
 div{
@@ -153,8 +148,6 @@ div{
 
 #savannahHabitat{
   background-image: url(./img/savanna1.jpg);
-  
-
 }
 
 #jungleHabitat{
@@ -162,19 +155,15 @@ div{
 }
 
 #aquaticHabitat{
-  background-image: url(./img//aquarium1.jpg);
-
+  background-image: url(./img//aquarium2.jpg);
 }
 
 #reptileHouse{
   background-image: url(./img/reptil-house2.jpg);
-
 }
 
 #forrestHabitat{
   background-image: url(./img/forrest1.jpg);
-
-
 }
 
 p{
@@ -182,4 +171,14 @@ p{
   padding: 5px;
   color: rgb(14, 36, 5);
   font-size: 0.9rem;
+}
+
+button{
+  background-color: rgb(87, 149, 33);
+  border: 1px solid rgba(255, 255, 255, 0.692);
+  color: white;
+  border-radius: 6px;
+  height: 30px;
+  padding: 5px;
+  font-size: 0.7rem;
 }
